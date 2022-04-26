@@ -1,0 +1,25 @@
+
+
+mat-card{
+    display: flex;
+}
+
+.button-container{
+    margin: 5%;
+}
+
+.addFileButton{
+    background-color: rgb(16, 133, 211);
+    color: white;
+}
+
+.uploadFile{
+    width: 800px;
+    text-align: center;
+}
+
+.sendFilesButton{
+    margin-top: 5%;
+    background-color: rgb(16, 133, 211);
+    color: white;
+}

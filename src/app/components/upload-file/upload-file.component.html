@@ -1,0 +1,38 @@
+<div class="body">
+  <div class="uploadFile">
+    <mat-card>
+      <div style="display: block">
+        <div style="display: flex">
+          <div class="noFilesSelected">
+            <div class="button-container">
+              <input
+                type="file"
+                #file
+                style="display:none;"
+                (change)="onFileSelected($event)"
+              />
+              <button
+                class="addFileButton"
+                mat-mini-fab
+                aria-label="Example icon button with a delete icon"
+                (click)="file.click()"
+              >
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>          
+              <h1>Añade tus archivos</h1>          
+              <button (click)="sendFiles()" mat-raised-button class="sendFilesButton">Enviar</button>  
+          </div>
+          <div class="filesSelected">
+            <mat-list role="list" style="width:100%">
+              <mat-list-item *ngFor="let file of selectedFiles"
+                >{{ file.FileName }} <mat-divider></mat-divider
+              ></mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+       
+      </div>
+    </mat-card>
+  </div>
+</div>
